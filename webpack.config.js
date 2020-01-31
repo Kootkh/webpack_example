@@ -43,7 +43,8 @@ const cssLoaders = extra => {
         reloadAll: true
       }
     },
-    'css-loader'
+    //'style-loader', // creates style nodes from JS strings
+    'css-loader',   // translates CSS into CommonJS
   ]
 
   if (extra) {
@@ -168,11 +169,11 @@ module.exports = {
       },
       { // LESS handling
         test: /\.less$/,
-        use: cssLoaders('less-loader'),
+        use: cssLoaders('less-loader'), // compiles Less to CSS before translate CSS into CommonJS & creates nodes from JS strings
       },
       { // SASS/SCSS handling
         test: /\.s[ac]ss$/,
-        use: cssLoaders('sass-loader'),
+        use: cssLoaders('sass-loader'), // compiles Sass to Sass before translate CSS into CommonJS & creates nodes from JS strings
       },
       { // Images handling
         test: /\.(png|jpg|svg|gif)$/,
