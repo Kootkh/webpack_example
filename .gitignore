@@ -1,6 +1,21 @@
-*.log
-build/
-node_modules/
+#IDE folders
 .idea/
+
+# BUILD folders
+build/
+
+# Отладочные журналы npm
+*.log*
+
+# Зависимости проекта
+node_modules/
+
+# Атрибуты папки OSX
+.DS_Store
+
+# Временные файлы
 my_notes.txt
 stats.json
+*.tmp
+*~
+*.bak
