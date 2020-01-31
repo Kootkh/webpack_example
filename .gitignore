@@ -3,6 +3,7 @@
 
 # BUILD folders
 build/
+dist/
 
 # Отладочные журналы npm
 *.log*
