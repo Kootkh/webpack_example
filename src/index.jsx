@@ -10,6 +10,7 @@ import '@/babel'
 import '@styles/styles.css'
 import '@styles/styles.less'
 import '@styles/styles.scss'
+require('dotenv').config();
 
 const post = new Post('Webpack post Title', WebpackLogo)
 
@@ -36,7 +37,7 @@ const App = () => (
 render(<App />, document.getElementById('app'))
 
 //console.log('Post to String:', post.toString())
-
+console.log('API Key is: ', process.env.API_KEY);
 //console.log('JSON:',json)
 //console.log('XML:',xml)
 //console.log('CSV:',csv)

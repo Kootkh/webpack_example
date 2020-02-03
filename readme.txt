@@ -10,6 +10,10 @@ npm init
     -D / --save-dev     devDependencies
     -g                  global to system
 **/
+
+  npm i -S dotenv-webpack
+  create .env in root dir
+
   sudo npm i -g webpack webpack-cli
   npm i -D webpack webpack-cli
 create in root dir "webpack.config.js"
